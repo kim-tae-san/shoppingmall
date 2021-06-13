@@ -1,0 +1,58 @@
+.goodscenter{
+	display: flex;
+}
+
+.goodscenter img{
+	margin-top: 200px;
+	padding-left: 150px;
+	width: 40%;
+	height: auto;
+}
+
+.goodsinfo{
+	width: 45%;
+	margin-top: 250px;
+	margin-left: 150px;
+}
+
+.line{
+	padding-top: 15px;
+	padding-bottom: 30px;
+	border-bottom: solid;
+ 	border-bottom-color: #E2E2E2;
+ 	border-width: thin;
+}
+
+.line2{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: solid;
+ 	border-bottom-color: #808080;
+ 	border-width: thin;
+}
+
+.button{
+	padding: 25px 70px 20px 70px;
+	background-color: #000;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 200;
+	border-width: thin;
+}
+
+.button1{
+	padding: 25px 50px 20px 50px;
+	background-color: #808080;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 200;
+	border-width: thin;
+}
+
+.goodsbutton{
+	display: flex;
+}
+
+.goodsbottom{
+	margin-left: 50%;
+}

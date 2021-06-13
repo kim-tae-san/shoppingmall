@@ -1,0 +1,56 @@
+.loginform{
+	margin-left: 40%;
+	margin-top: 15%;
+}
+
+.login{
+	display: flex;
+	padding-bottom: 15px;
+}
+
+.loginfo input{
+	padding: 8px 120px 8px 5px;
+	border-width: thin;
+}
+
+.loginfo{
+	padding-right: 30px;
+}
+
+#submit{
+	padding: 15px 50px 15px 50px;
+	background-color: #000;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.loghelp input{ 
+	padding: 13px 40px 13px 40px;
+
+}
+
+.loghelp{
+	padding-top: 15px;
+}
+
+.line3{
+	width: 450px;
+	border-top: solid;
+	border-width: thin;
+	border-top-color: #E2E2E2;
+}
+
+#join{
+	cursor: pointer;
+	background-color: #000;
+	color: #fff;
+	border-width: thin;
+}
+
+#help{
+	cursor: pointer;
+	background-color: #fff;
+	color: #000;
+	border-width: thin;
+}

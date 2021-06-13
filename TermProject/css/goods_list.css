@@ -1,0 +1,27 @@
+.shophead {
+	margin-top: 100px;
+	padding-bottom: 100px;
+	width: 100%;
+}
+
+.centertext{
+	font-size: 43px;
+	text-align: center;
+
+}
+
+.myprod {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 120px;
+  display: flex;
+}
+
+.goodslist{
+  padding-top: 30px;
+  width: 100%;
+  position: relative;
+  align-content: center;
+  padding-right: 10%;
+  padding-left: 10%;
+}

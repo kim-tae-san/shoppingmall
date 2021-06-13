@@ -1,0 +1,45 @@
+.mypagehead{
+	width: 90%;
+	margin-left: 80px;
+	margin-top: 150px;
+	margin-bottom: 30px;
+	border-bottom: solid;	
+ 	border-bottom-color: #808080;
+ 	border-width: thin;
+}
+#editform{
+	margin-left: 20%;
+	margin-top: 100px;
+}
+
+th{
+	text-align: left;
+}
+
+th{
+	padding-top: 50px;
+}
+
+td{
+	padding-left: 30px;
+	padding-top: 50px;
+}
+
+input{
+	padding: 8px 100px 8px 5px;
+	background-color: #fff;
+	border-width: thin;
+}
+
+#editbutton{
+	cursor: pointer;
+	padding: 15px 40px 15px 40px;
+	border-radius: 10px;
+	background-color: #000;
+	color: #fff;
+}
+
+.submit{
+	margin-left: 130px;
+	margin-top: 50px;
+}
