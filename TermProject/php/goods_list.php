@@ -57,19 +57,20 @@
 	<img class="shophead" src="/TermProject/img/shopping.jpeg">
 	<div class="centertext">
 		전제품 보기
-	</div>	
+	</div>
+	<div class="goodslist">
 		<?php
-			$query = mysqli_query($conn, "SELECT MAX(id) FROM product");
-			$max = mysqli_fetch_array($query);
-			$size = $max[0];
 			$sql = "SELECT * FROM product";
 			$query2 = mysqli_query($conn, $sql);
-			for($i= 0; $i<$max[0]/3; $i++){
-				$product = mysqli_fetch_array($query2);
+			$count = 0;
+			?>
+			<?php
+			while($product = mysqli_fetch_array($query2)){
 				$goodsid = $product['id'];
+				if($count % 3 == 0){
+					echo "<div class='myprod fade'>";
+				}
 				?>
-				<div class="goodslist">
-				<div class="myprod fade">
 					<div class="pim">
 						<img onclick="location.href='goods_view.php?goodsid=<?=$goodsid?>'" src=<?= $product['imgurl']?>>
 						<div onclick="location.href='goods_view.php?goodsid=<?=$goodsid?>'" class="ptext">
@@ -79,37 +80,14 @@
 							원
 						</div>
 					</div>
-					<?php 
-					$product = mysqli_fetch_array($query2);
-					$goodsid = $product['id'];
-					?>
-					<div class="pim">
-						<img onclick="location.href='goods_view.php?goodsid=<?=$goodsid?>'" src=<?= $product['imgurl']?>>
-						<div onclick="location.href='goods_view.php?goodsid=<?=$goodsid?>'" class="ptext">
-							<?= $product['name'] ?>
-							<br>
-							<?= $product['price']?>
-							원
-						</div>
-					</div>
-					<?php 
-					$product = mysqli_fetch_array($query2);
-					$goodsid = $product['id'];
-					?>
-					<div class="pim">
-						<img onclick="location.href='goods_view.php?goodsid=<?=$goodsid?>'" src=<?= $product['imgurl']?>>
-						<div onclick="location.href='goods_view.php?goodsid=<?=$goodsid?>'" class="ptext">
-							<?= $product['name'] ?>
-							<br>
-							<?= $product['price']?>
-							원
-						</div>
-					</div>	
-				</div>
-			</div>
 				<?php
+				$count++;
+				if($count % 3 == 0){
+					echo "</div>";
+				}
 			}
-		?>	
+		?>
+	</div>	
 	<div class="bottom-box">
 		<div class="bottom-top">
 			<div id="info-unit">
